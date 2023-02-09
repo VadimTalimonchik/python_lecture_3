@@ -129,16 +129,47 @@
 #                                           # квадрат эього числа
 # print(out)                                # вывод результата в консоль
 
-# новый способ
-def select(f, col):
-    return [f(x) for x in col]
+# # новый способ
+# def select(f, col):
+#     return [f(x) for x in col]
 
-def where(f, col):
-    return [x for x in col if f(x)]
+# def where(f, col):
+#     return [x for x in col if f(x)]
 
-data = '1 2 3 5 8 15 23 38'.split()
+# data = '1 2 3 5 8 15 23 38'.split()
 
-res = select(int, data)
-res = where(lambda x: not x % 2, res)
-res = select(lambda x: (x, x ** 2), res)
-print(res)
+# res = select(int, data)
+# res = where(lambda x: not x % 2, res)
+# res = select(lambda x: (x, x ** 2), res)
+# print(res)
+
+# ФУНКЦИЯ map
+# li = [x for x in range(1, 20)]
+# # print(li)
+
+# li = list(map(lambda x: x + 10, li))
+# print(li)
+
+# data = list(map(int, input().split()))
+# print(data)
+
+# # data = map(int, '1 2 3'.split())
+# data = list(map(int, '1 2 3'.split()))
+# for e in data:
+#     print(e)
+
+# print('---')
+
+# for e in data:
+#     print(e)
+
+# def where(f, col):
+#     return [x for x in col if f(x)]
+
+# data = '1 2 3 5 8 15 23 38'.split()
+
+# res = map(int, data)
+# res = where(lambda x: not x % 2, res)
+# res = list(map(lambda x: (x, x ** 2), res))
+# print(res)
+

@@ -42,13 +42,24 @@
 # a = sumNumbers(n, 'qwerty')
 # print(a)
 
-# Задача:
-# Передать функции множество букв и в итоге получить единое слово, но мы не знаем
-# сколько будет букв и не знаем сколько  надо передать аргументов.
-def sum_str(*args):
-    res = ''
-    for i in args:
-        res += i
-    return res
-print(sum_str('H', 'e', 'l', 'l', 'o', '!'))
-# print(sum_str(1, 9, 7, 4))
+# # Задача:
+# # Передать функции множество букв и в итоге получить единое слово, но мы не знаем
+# # сколько будет букв и не знаем сколько  надо передать аргументов.
+# def sum_str(*args):
+#     res = ''
+#     for i in args:
+#         res += i
+#     return res
+# print(sum_str('H', 'e', 'l', 'l', 'o', '!'))
+# # print(sum_str(1, 9, 7, 4))
+
+# РЕКУРСИЯ
+def fib(n):
+    if n in [1, 2]:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+list1 = []
+for i in range(1, 10):
+    list1.append(fib(i))
+print(list1)

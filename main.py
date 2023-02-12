@@ -1,4 +1,4 @@
-# # v.1
+# # v.1 импорт модуля
 # import modul1
 # print(modul1.max1(5, 9))
 
